@@ -81,9 +81,7 @@
       <div class="logo">
         <h6>
           <a href="#" aria-label="Link Halaman Utama"><span>
-              <svg width="450px" height="50px">
-                <image alt="Logo" href="img/logo.png" x="2" y="6" style="height:50px; width:150px;"></image>
-              </svg>
+              IMA SUMSEL
             </span>
           </a>
         </h6>
@@ -138,8 +136,8 @@
   <main id="main">
     <section id="info" class="info">
       <div class="container">
-        <div class="alert alert-danger">
-          <p class="text-center"><strong>Pendaftaran dimulai dari 1 - 15 Maret 2025</strong></p>
+        <div class="alert alert-secondary">
+          <p class="text-center"><strong>keberangkatan pada 28 Maret 2025</strong></p>
           <div id="countdown"></div>
         </div>
         <div class="section-title aos-init aos-animate" data-aos="fade-up">
@@ -180,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="about">
           <hr>
           <h3 class="card-title text-danger">
             <i class="ri-edit-2-fill"></i>
@@ -269,7 +267,7 @@
 
     var options = {
       series: [{
-        data: [500, 430, 448, 470, 540, 580, 690]
+        data: [500, 430, 448, 470, 540]
       }],
       chart: {
         type: 'bar',
@@ -307,8 +305,7 @@
         colors: ['#fff']
       },
       xaxis: {
-        categories: ['Rawas Ulu', 'Rupit', 'Batu Urip Taba', 'Cereme Taba', 'Ulu Rawas', 'Nibung', 'Tugumulyo'
-        ],
+        categories: ['Muratara', 'Musi Rawas', 'Lubuklinggau', 'Palembang', 'OKU'],
       },
       yaxis: {
         labels: {
@@ -334,7 +331,7 @@
     chart.render();
   </script>
   <script>
-    const targetDate = new Date("2025-03-10T10:00:00").getTime(); // Ganti tanggal target di sini
+    const targetDate = new Date("2025-03-28T07:30:00").getTime(); // Ganti tanggal target di sini
     const countdownElement = document.getElementById('countdown');
 
     function updateCountdown() {
